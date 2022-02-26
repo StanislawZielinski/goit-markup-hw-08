@@ -63,6 +63,9 @@ a {
   align-items: center;
   min-height: 80px;
 }
+.header__logo {
+  margin-right: 93px;
+}
 .logo {
   font-family: var(--Raleway-font);
   font-weight: 700;
@@ -70,7 +73,6 @@ a {
   font-size: 26px;
   line-height: 1.192em;
   letter-spacing: 0.03em;
-  margin-right: 93px;
 }
 .logo__link {
   color: var(--secondary-color);
@@ -78,15 +80,16 @@ a {
 .logo__title {
   color: var(--main-color);
 }
-.navigation {
+/* .navigation {
   width: 254px;
   margin-right: 371px;
-}
+} */
 
 .navigation-list {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 254px;
 }
 
 .navigation-list-item {
@@ -419,7 +422,7 @@ a {
   justify-content: space-between;
   align-items: baseline;
 }
-.logo__footer {
+.footer__logo {
   color: var(--white-color);
   margin-bottom: 20px;
 }

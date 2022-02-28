@@ -1,0 +1,31 @@
+.policy__label {
+  font-size: 14px;
+  line-height: 1.714px;
+  letter-spacing: 0.03em;
+  color: rgba(117, 117, 117, 1);
+  margin-bottom: 30px;
+}
+.policy__label::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(33, 33, 33, 1);
+  border-radius: 4px;
+  margin-right: 7px;
+  margin-bottom: -3px;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.policy__input:checked + .policy__label::before {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  background-image: url(../images/svg/check-icon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.policy__link {
+  color: var(--secondary-color);
+}

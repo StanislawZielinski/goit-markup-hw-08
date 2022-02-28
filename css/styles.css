@@ -99,8 +99,7 @@ a {
   position: relative;
 }
 
-.navigation__link,
-.address__link {
+.navigation__link {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -159,10 +158,15 @@ a {
   justify-content: space-between;
 }
 .address__link {
-  color: #757575;
+  color: rgba(117, 117, 117, 1);
   display: flex;
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143em;
+  letter-spacing: 0.02em;
 }
 
 .address__link:hover,
@@ -382,7 +386,7 @@ a {
 
 /* section OUR CLIENTS */
 
-.our-clients-title {
+.clients__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.667em;
@@ -390,11 +394,11 @@ a {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-.clients-list {
+.clients__list {
   display: flex;
   justify-content: space-between;
 }
-.clients-link {
+.clients__link {
   height: 92px;
   width: 170px;
   border-radius: 4px;
@@ -409,8 +413,8 @@ a {
   width: 106px;
   height: 60px;
 }
-.clients-link:hover,
-.clients-link:focus {
+.clients__link:hover,
+.clients__link:focus {
   fill: rgba(33, 150, 243, 1);
   border: 1px solid rgba(33, 150, 243, 1);
 }
@@ -421,7 +425,7 @@ a {
 .footer {
   background-color: var(--blackBackground-color);
 }
-.footer > .container {
+.footer .container {
   padding: 60px 0;
   display: flex;
   justify-content: space-between;
@@ -431,18 +435,10 @@ a {
   color: var(--white-color);
   margin-bottom: 20px;
 }
-.address-footer-list-item-localization-link {
-  font-style: normal;
-  font-size: 14px;
+.address__localization {
   line-height: 1.717em;
   letter-spacing: 0.03em;
-  color: #ffffff;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address-footer-list-item-localization-link:hover,
-.address-footer-list-item-localization-link:focus {
-  color: var(--secondary-color);
+  color: rgba(255, 255, 255, 1);
 }
 
 .address-footer-list-item-contacts-link {
@@ -453,14 +449,17 @@ a {
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.address-footer-list-item-contacts-link:hover,
-.address-footer-list-item-contacts-link:focus {
-  color: var(--secondary-color);
+.footer__link {
+  font-weight: 500;
+  line-height: 1.717em;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 9px;
 }
+
 /* footer-contact END */
 
-.footer-media-title {
+.media__title {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 1);
   font-weight: 700;
@@ -469,28 +468,16 @@ a {
   margin-bottom: 20px;
   font-size: 14px;
 }
-.social-media {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.social-media-link-footer {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+
+.footer__social-media {
   background-color: rgba(255, 255, 255, 0.1);
-  justify-content: center;
-  align-items: center;
   margin-right: 10px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-social-media-footer {
-  width: 20px;
-  height: 20px;
+.footer__icon-social-media {
   fill: rgba(255, 255, 255, 1);
 }
+
 .social-media-link-footer:hover,
 .social-media-link-footer:focus {
   background-color: rgba(33, 150, 243, 1);
@@ -499,7 +486,7 @@ a {
 
 /* FOOTER-NEWSLETTER */
 
-.footer-newsletter-label-text {
+.newsletter__text {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.143em;
@@ -507,7 +494,7 @@ a {
   color: var(--white-color);
   margin-bottom: 20px;
 }
-.footer-newsletter-input {
+.newsletter__input {
   width: 358px;
   height: 50px;
   background-color: var(--blackBackground-color);
@@ -517,11 +504,11 @@ a {
   padding-left: 16px;
   color: var(--white-color);
 }
-.footer-newsletter-input::placeholder {
+.newsletter__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-newsletter-box-button {
+.newsletter__box-button {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -531,7 +518,7 @@ a {
   letter-spacing: 0.06em;
   color: var(--white-color);
 }
-.footer-newsletter-button {
+.newsletter__button {
   cursor: pointer;
   background-color: var(--secondary-color);
   width: 200px;
@@ -688,7 +675,7 @@ a {
   animation: scale-window 2000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-title {
+.modal__title {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.15em;
@@ -696,7 +683,7 @@ a {
   text-align: center;
   color: rgba(33, 33, 33, 1);
 }
-.modal-input-label-text {
+.modal__text {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -715,7 +702,7 @@ a {
   top: 12px;
   left: 12px;
 }
-.modal-input {
+.modal__input {
   height: 40px;
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -723,19 +710,19 @@ a {
   padding-left: 42px;
   outline: none;
 }
-.modal-label-box {
+.modal__box {
   position: relative;
   fill: rgba(33, 33, 33, 1);
 }
 
-.modal-input:focus ~ .icon-modal {
+.modal__input:focus ~ .icon-modal {
   fill: var(--secondary-color);
 }
-.modal-input:focus {
+.modal__input:focus {
   border-color: var(--secondary-color);
 }
 
-.modal-comments {
+.modal__comments {
   padding: 12px 16px;
   min-height: 120px;
   width: 100%;
@@ -745,22 +732,22 @@ a {
   outline: none;
   margin-bottom: 20px;
 }
-.modal-comments:focus {
+.modal__comments:focus {
   border: 1px solid var(--secondary-color);
 }
 
-.modal-comments:not(:placeholder-shown) {
+.modal__comments:not(:placeholder-shown) {
   border: 1px solid var(--secondary-color);
 }
 
-.modal-form-policy-label {
+.modal-policy__label {
   font-size: 14px;
   line-height: 1.714px;
   letter-spacing: 0.03em;
   color: rgba(117, 117, 117, 1);
   margin-bottom: 30px;
 }
-.modal-form-policy-label::before {
+.modal-policy__label::before {
   content: '';
   display: inline-block;
   width: 16px;
@@ -772,7 +759,7 @@ a {
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-policy-input:checked + .modal-form-policy-label::before {
+.modal-policy__input:checked + .modal-policy__label::before {
   background-color: var(--secondary-color);
   border-color: var(--secondary-color);
   background-image: url(../images/svg/check-icon.svg);
@@ -790,15 +777,15 @@ a {
   width: 1px !important;
   overflow: hidden;
 }
-.policy-link {
+.policy__link {
   color: var(--secondary-color);
 }
-.modal-button-box {
+.modal__button-box {
   display: flex;
   justify-content: center;
   margin-top: 30px;
 }
-.modal-button {
+.modal__button {
   cursor: pointer;
   background-color: var(--secondary-color);
   width: 200px;
@@ -813,7 +800,7 @@ a {
   opacity: 0;
   pointer-events: none;
 }
-.close-btn {
+.close__btn {
   width: 30px;
   height: 30px;
   border-radius: 50%;

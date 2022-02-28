@@ -1,0 +1,19 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+}
+.header__logo {
+  margin-right: 93px;
+}
+.header__navigation {
+  width: 254px;
+  margin-right: 345px;
+}
+.header__address {
+  width: 321px;
+}

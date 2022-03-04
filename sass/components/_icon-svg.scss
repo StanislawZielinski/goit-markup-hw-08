@@ -1,0 +1,38 @@
+.icon-envelope {
+  width: 16px;
+  height: 10px;
+}
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+}
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut {
+  width: 70px;
+  height: 70px;
+}
+.icon-social-media {
+  width: 20px;
+  height: 20px;
+}
+.icon-clients {
+  width: 106px;
+  height: 60px;
+}
+.icon-send {
+  width: 24px;
+  height: 24px;
+}
+.icon-modal {
+  height: $icon-modal;
+  width: $icon-modal;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+.icon-close-btn {
+  width: $icon-modal;
+  height: $icon-modal;
+}

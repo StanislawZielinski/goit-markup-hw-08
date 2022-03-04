@@ -1,0 +1,99 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  min-height: 581px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  background-color: var(--white-color);
+  border-radius: 4px;
+  padding: 40px;
+  animation: scale-window 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.15em;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: rgba(33, 33, 33, 1);
+  }
+  &__text {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: rgba(117, 117, 117, 1);
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 4px;
+  }
+  &__input {
+    height: 40px;
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    outline: none;
+  }
+  &__box {
+    position: relative;
+    fill: rgba(33, 33, 33, 1);
+  }
+  &__input:focus ~ .icon-modal {
+    fill: var(--secondary-color);
+  }
+  &__input:focus {
+    border-color: var(--secondary-color);
+  }
+  &__comments {
+    padding: 12px 16px;
+    min-height: 120px;
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    outline: none;
+    margin-bottom: 20px;
+  }
+  &__comments:focus {
+    border: 1px solid var(--secondary-color);
+  }
+  &__comments:not(:placeholder-shown) {
+    border: 1px solid var(--secondary-color);
+  }
+  &__button-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  &__button {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: var(--white-color);
+  }
+  &__button-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  &__button {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: var(--white-color);
+  }
+}

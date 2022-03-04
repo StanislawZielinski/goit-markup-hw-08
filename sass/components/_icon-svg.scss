@@ -26,13 +26,13 @@
   height: 24px;
 }
 .icon-modal {
-  height: 18px;
-  width: 18px;
+  height: $icon-modal;
+  width: $icon-modal;
   position: absolute;
   top: 12px;
   left: 12px;
 }
 .icon-close-btn {
-  width: 18px;
-  height: 18px;
+  width: $icon-modal;
+  height: $icon-modal;
 }

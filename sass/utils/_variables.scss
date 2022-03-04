@@ -1,0 +1,18 @@
+:root {
+  --main-color: #212121;
+  --secondary-color: #2196f3;
+  --color1: #212121;
+  --color2: #2196f3;
+  --color4: #afb1b8;
+  --blackBackground-color: #2f303a;
+  --white-color: #fff;
+  --Roboto-font: 'Roboto', sans-serif;
+  --Raleway-font: 'Raleway', sans-serif;
+}
+
+$icon-modal: 18px;
+
+@mixin portfolio-img($width, $height) {
+  width: $width;
+  height: $height;
+}

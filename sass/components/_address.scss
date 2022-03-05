@@ -1,6 +1,32 @@
 .address {
   display: none;
 }
+.address-mobile {
+  &__item {
+    margin-bottom: 32px;
+    &:last-child {
+      margin-bottom: 64px;
+    }
+  }
+
+  &-number__link {
+    font-size: 34px;
+    font-style: normal;
+    color: var(--secondary-color);
+    font-weight: 500;
+    line-height: 1.174;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+  &-mail__link {
+    color: rgba(117, 117, 117, 1);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.167;
+    letter-spacing: 0.02em;
+  }
+}
 // DESKTOP**********************
 // .address {
 //   display: flex;

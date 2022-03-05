@@ -29,7 +29,7 @@
         </h3>
         
 
-        <button class="hamburger hamburger__header" aria-label="Menu">
+        <button class="hamburger hamburger__header" data-hamburger-open aria-label="Menu">
           <span class="hamburger__menu" >
             <span class="hamburger__bars"></span>
           </span>
@@ -548,6 +548,54 @@
         </button>
       </div>
     </div>
+  <!-- HAMBURGER MENU -->
+    <div class="hamburger-backdrop is-hidden" data-hamburger>
+      <div class="container container-mobile-menu">
+        <!-- section hamburger-menu -->
+        <nav>
+          <ul class="menu-mobile">
+            <li class="menu-mobile__item">
+              <a class="menu-mobile__link menu-mobile__link--active" href="index.html">Agencja</a>
+            </li>
+            <li class="menu-mobile__item">
+              <a class="menu-mobile__link" href="portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="menu-mobile__item">
+              <a class="menu-mobile__link" href="#">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- section address -->
+        <address>
+          <ul class="address-mobile">
+            <li class="address-mobile__item">
+              <a
+                class="address-mobile__link"
+                href="mailto:info@devstudio.com"
+              >
+                +48 111 111 111</a
+              >
+            </li>
+            <li class="address__item">
+              <a class="address__link" href="tel:+48111111111">
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <button type="button" class="close__btn" data-hamburger-close>
+          <svg class="icon-close-btn-mobile">
+            <use href="./images/svg/sprite.svg#icon-close-black-18dp"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

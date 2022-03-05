@@ -2,7 +2,7 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,4 +10,23 @@
   right: 8px;
   top: 8px;
   cursor: pointer;
+  &:focus,
+  &:hover {
+    fill: var(--secondary-color);
+  }
 }
+
+// DESKTOP*********
+// .close__btn {
+//   width: 30px;
+//   height: 30px;
+//   border-radius: 50%;
+//   border: 1px solid rgba(0, 0, 0, 0.1);
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   position: absolute;
+//   right: 8px;
+//   top: 8px;
+//   cursor: pointer;
+// }

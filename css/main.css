@@ -72,11 +72,9 @@ a {
 }
 
 .container {
-  min-width: 320px;
-  max-width: 480px;
+  width: 480px;
   padding: 0 15px;
   margin: 0 auto;
-  align-items: center;
 }
 
 .section {
@@ -88,49 +86,12 @@ a {
 }
 
 .hamburger {
-  margin: 0;
-  padding: 0;
   border: 0;
-  background-color: transparent;
   cursor: pointer;
-  outline: none;
 }
 
-.hamburger:focus, .hamburger__menu:focus {
-  outline: none;
-}
-
-.hamburger__menu {
-  display: flex;
-  align-items: center;
-  position: relative;
-  width: 24px;
-  height: 16px;
-}
-
-.hamburger__bars {
-  position: absolute;
-  width: 24px;
-  height: 2.67px;
-  background-color: #000;
-  transition: transform 220ms ease-in-out;
-}
-
-.hamburger__bars::before, .hamburger__bars::after {
-  display: block;
-  position: absolute;
-  width: 24px;
-  height: 2.67px;
-  background-color: #000;
-  content: '';
-}
-
-.hamburger__bars::before {
-  top: -12px;
-}
-
-.hamburger__bars::after {
-  bottom: -12px;
+.hamburger:hover, .hamburger:focus {
+  fill: var(--secondary-color);
 }
 
 .hamburger-backdrop {
@@ -266,6 +227,11 @@ a {
 .icon-close-btn {
   width: 18px;
   height: 18px;
+}
+
+.icon-menu-mobile {
+  width: 24px;
+  height: 16px;
 }
 
 .icon-close-btn-mobile {
@@ -586,7 +552,7 @@ a {
 }
 
 .general {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/general.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/general mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -597,6 +563,8 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-size: 480px 400px;
+  align-items: center;
 }
 
 .general__text {
@@ -728,7 +696,6 @@ a {
 .team___img {
   display: block;
   max-width: 100%;
-  min-width: 320px;
   height: auto;
   margin: 0 auto;
 }

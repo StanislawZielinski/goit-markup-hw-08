@@ -1,6 +1,6 @@
 .general {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/background/general.jpg');
+    url('../images/background/general mobile.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -10,6 +10,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-size: 480px 400px;
+  align-items: center;
 }
 .general__text {
   font-weight: 900;

@@ -7,6 +7,9 @@
 .description__box {
   margin-bottom: 30px;
   width: 100%;
+  &:last-child {
+    margin-bottom: 0px;
+  }
 }
 .description__icon {
   height: 120px;

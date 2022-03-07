@@ -23,18 +23,14 @@
       <div class="container">
         <!-- LOGO -->
         <h3 class="logo header__logo">
-          <a class="logo__link" href="index.html"
-            >Web<span class="logo__title">Studio</span></a
-          >
+          <a class="logo__link" href="index.html">Web<span class="logo__title">Studio</span></a>
         </h3>
-        
 
-        <button class="hamburger hamburger__header" data-hamburger-open aria-label="Menu">
-          <span class="hamburger__menu" >
+        <button class="hamburger" data-hamburger-open aria-label="Menu">
+          <span class="hamburger__menu">
             <span class="hamburger__bars"></span>
           </span>
         </button>
-
 
         <!-- section nav -->
         <nav>
@@ -43,9 +39,7 @@
               <a class="navigation__link navigation__link--active" href="index.html">Agencja</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="portfolio.html"
-                >Portfolio</a
-              >
+              <a class="navigation__link" href="portfolio.html">Portfolio</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="#">Kontakt</a>
@@ -56,10 +50,7 @@
         <address>
           <ul class="address header__address">
             <li class="address__item">
-              <a
-                class="address__link"
-                href="mailto:info@devstudio.com"
-              >
+              <a class="address__link" href="mailto:info@devstudio.com">
                 <svg class="icon-envelope address__icon">
                   <use href="./images/svg/sprite.svg#icon-envelope"></use>
                 </svg>
@@ -81,18 +72,16 @@
 
     <!-- main box-->
     <!-- GENERAL -->
-    <!-- <main>
-      <!-- <section class="general">
+    <main>
+      <section class="general">
         <div class="container">
-          <h1 class="general__text">
-            EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
-          </h1>
+          <h1 class="general__text">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
           <button class="general__button" data-modal-open type="button">Zamów usługę</button>
         </div>
-      </section> -->
+      </section>
 
       <!-- NASZE ATUTY -->
-      <!-- <section class="description section">
+      <section class="description section">
         <div class="container">
           <div class="description__box">
             <div class="description__icon">
@@ -102,8 +91,8 @@
             </div>
             <h4 class="description__title">LOREM IPSUM</h4>
             <p class="description__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+              sodales dui. Interdum et malesuada
             </p>
           </div>
 
@@ -115,8 +104,8 @@
             </div>
             <h4 class="description__title">LOREM IPSUM</h4>
             <p class="description__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+              sodales dui. Interdum et malesuada
             </p>
           </div>
 
@@ -128,8 +117,8 @@
             </div>
             <h4 class="description__title">LOREM IPSUM</h4>
             <p class="description__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+              sodales dui. Interdum et malesuada
             </p>
           </div>
 
@@ -141,12 +130,12 @@
             </div>
             <h4 class="description__title">LOREM IPSUM</h4>
             <p class="description__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+              sodales dui. Interdum et malesuada
             </p>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- WHAT WE DO -->
       <!-- <section class="what-we-do">
@@ -404,7 +393,8 @@
           </ul>
         </div>
       </section> -->
-    </main> -->
+    </main>
+    -->
 
     <!-- footer -->
     <!-- <footer class="footer">
@@ -493,7 +483,7 @@
       </div>
     </footer> -->
 
-  <!-- MODAL WINDOW -->
+    <!-- MODAL WINDOW -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <h3 class="modal__title">Zostaw swoje dane w formularzu poniżej</h3>
@@ -501,43 +491,56 @@
           <label class="modal__label">
             <p class="modal__text">Imię</p>
             <div class="modal__box" role="group" aria-labelledby="name">
-              <input type="name" name="name" class="modal__input" required> 
+              <input type="name" name="name" class="modal__input" required />
               <svg class="icon-modal">
                 <use href="./images/svg/sprite.svg#icon-person-black-18dp"></use>
-              </svg>      
-            </div>         
+              </svg>
+            </div>
           </label>
 
-          <label class="modal__label"><p class="modal__text">Telefon</p>
+          <label class="modal__label"
+            ><p class="modal__text">Telefon</p>
             <div class="modal__box" role="group" aria-labelledby="tel">
-              <input type="tel" name="phone_nmber" class="modal__input" required>
+              <input type="tel" name="phone_nmber" class="modal__input" required />
               <svg class="icon-modal">
                 <use href="./images/svg/sprite.svg#icon-phone-black-18dp"></use>
               </svg>
-            </div>    
+            </div>
           </label>
 
-          <label class="modal__label"><p class="modal__text">Email</p>
+          <label class="modal__label"
+            ><p class="modal__text">Email</p>
             <div class="modal__box" role="group" aria-labelledby="email">
-                <input type="email" name="email" class="modal__input" required>
-                <svg class="icon-modal">
-                  <use href="./images/svg/sprite.svg#icon-email-black-18dp"></use>
-                </svg> 
-            </div>    
-          </label>
-          
-          <label class="modal__label"><p class="modal__text">Komentarz</p>
-            <textarea name="comments" placeholder="Wprowadź tekst" class="modal__comments"></textarea>
+              <input type="email" name="email" class="modal__input" required />
+              <svg class="icon-modal">
+                <use href="./images/svg/sprite.svg#icon-email-black-18dp"></use>
+              </svg>
+            </div>
           </label>
 
-          <input id="policy-form" type="checkbox" name="policy" class="policy__input visually-hiden" required>
-          <label for="policy-form" class="policy__label">Oświadczam iż akceptuję <a class="policy__link" href="#">Regulamin</a> i <a class="policy__link" href="#">Politykę Prywatności.</a>
+          <label class="modal__label"
+            ><p class="modal__text">Komentarz</p>
+            <textarea
+              name="comments"
+              placeholder="Wprowadź tekst"
+              class="modal__comments"
+            ></textarea>
+          </label>
+
+          <input
+            id="policy-form"
+            type="checkbox"
+            name="policy"
+            class="policy__input visually-hiden"
+            required
+          />
+          <label for="policy-form" class="policy__label"
+            >Oświadczam iż akceptuję <a class="policy__link" href="#">Regulamin</a> i
+            <a class="policy__link" href="#">Politykę Prywatności.</a>
           </label>
 
           <div class="modal__button-box">
-            <button type="submit" class="modal__button">
-                Wyślij
-            </button>
+            <button type="submit" class="modal__button">Wyślij</button>
           </div>
         </form>
 
@@ -548,7 +551,7 @@
         </button>
       </div>
     </div>
-  <!-- HAMBURGER MENU -->
+    <!-- HAMBURGER MENU -->
     <div class="hamburger-backdrop is-hidden" data-hamburger>
       <div class="container container-mobile-menu">
         <!-- section hamburger-menu -->
@@ -558,9 +561,7 @@
               <a class="menu-mobile__link menu-mobile__link--active" href="index.html">Agencja</a>
             </li>
             <li class="menu-mobile__item">
-              <a class="menu-mobile__link" href="portfolio.html"
-                >Portfolio</a
-              >
+              <a class="menu-mobile__link" href="portfolio.html">Portfolio</a>
             </li>
             <li class="menu-mobile__item">
               <a class="menu-mobile__link" href="#">Kontakt</a>
@@ -571,12 +572,7 @@
         <address>
           <ul class="address-mobile">
             <li class="address-mobile__item">
-              <a
-                class="address-mobile-number__link"
-                href="tel:+48111111111"
-              >
-                +48 111 111 111</a
-              >
+              <a class="address-mobile-number__link" href="tel:+48111111111"> +48 111 111 111</a>
             </li>
             <li class="address-mobile__item">
               <a class="address-mobile-mail__link" href="mailto:info@devstudio.com">
@@ -589,16 +585,19 @@
         <section class="social-media-mobile">
           <ul class="social-media-mobile__list">
             <li class="social-media-mobile__item">
-              <a class="social-media-mobile__link" href="#">Instagram</a></li>
+              <a class="social-media-mobile__link" href="#">Instagram</a>
+            </li>
             <li class="social-media-mobile__item">
-              <a class="social-media-mobile__link" href="#">Twitter</a></li>
+              <a class="social-media-mobile__link" href="#">Twitter</a>
+            </li>
             <li class="social-media-mobile__item">
-              <a class="social-media-mobile__link" href="#">Facebook</a></li>
+              <a class="social-media-mobile__link" href="#">Facebook</a>
+            </li>
             <li class="social-media-mobile__item">
-              <a class="social-media-mobile__link" href="#">Linkedin</a></li>
+              <a class="social-media-mobile__link" href="#">Linkedin</a>
+            </li>
           </ul>
         </section>
-
 
         <button type="button" class="close__btn" data-hamburger-close>
           <svg class="icon-close-btn-mobile">
@@ -607,7 +606,6 @@
         </button>
       </div>
     </div>
-
 
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>

@@ -72,14 +72,15 @@ a {
 }
 
 .container {
-  width: 480px;
+  min-width: 320px;
+  max-width: 480px;
   padding: 0 15px;
   margin: 0 auto;
   align-items: center;
 }
 
 .section {
-  padding-top: 94px;
+  padding-top: 60px;
   padding-bottom: 94px;
 }
 
@@ -294,7 +295,7 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
+  width: 100%;
   min-height: 581px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   background-color: var(--white-color);
@@ -306,10 +307,11 @@ a {
 .modal__title {
   font-size: 20px;
   font-weight: 700;
-  line-height: 1.15em;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
+  width: 370px;
 }
 
 .modal__text {
@@ -405,8 +407,9 @@ a {
 }
 
 .policy__label {
-  font-size: 14px;
-  line-height: 1.714px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 30px;
@@ -508,23 +511,25 @@ a {
 
 .description .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.description__box :not(last-child) {
-  margin-right: 30px;
+.description__box {
+  margin-bottom: 30px;
+  width: 100%;
 }
 
 .description__icon {
   height: 120px;
-  width: 270px;
+  width: 100%;
   border-radius: 4px;
   background: #f5f4fa;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .description__title {
@@ -534,6 +539,7 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .description__text {
@@ -541,7 +547,6 @@ a {
   line-height: 1.714em;
   letter-spacing: 0.03em;
   color: #757575;
-  width: 270px;
 }
 
 .footer {
@@ -581,20 +586,26 @@ a {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/general.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 200px 0;
   background-position: center;
+}
+
+.general .container {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .general__text {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.364em;
+  font-size: 26px;
+  line-height: 1.615m;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  width: 692px;
   margin: 0 auto 30px;
+  width: 365px;
 }
 
 .general__button {
@@ -609,7 +620,6 @@ a {
   letter-spacing: 0.06em;
   color: #ffffff;
   padding: 10px 42px;
-  margin: auto auto;
 }
 
 .general__button:hover,

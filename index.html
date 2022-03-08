@@ -184,16 +184,11 @@
           <h2 class="team__title">Nasz zespół</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                class="team__img"
-                src="images\nasz zespół\product designer mobile.jpg"
-                alt="product designer"
-              />
-              <!-- <img
-                class="team__img"
-                src="images\nasz zespół\product designer.webp"
-                alt="product designer"
-              /> -->
+              <picture >
+                <source srcset="images\nasz zespół\product designer desktop.jpg" media="(min-width: 1200px)">
+                <source srcset="images\nasz zespół\product designer tablet.jpg" media="(min-width: 768px)">
+                <img src="images\nasz zespół\product designer mobile.jpg" alt="product designer">
+              </picture>
               <h3 class="team__name">John Doe</h3>
               <p class="team__position">Product Designer</p>
               <ul class="social-media team__social-media">

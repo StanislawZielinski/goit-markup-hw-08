@@ -2,10 +2,9 @@
   background-color: var(--blackBackground-color);
 }
 .footer .container {
-  padding: 60px 0;
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
 }
 .footer__logo {
   color: var(--white-color);
@@ -26,3 +25,33 @@
 .footer__icon-social-media {
   fill: rgba(255, 255, 255, 1);
 }
+
+// DESKTOP*****************
+// .footer {
+//   background-color: var(--blackBackground-color);
+// }
+// .footer .container {
+//   padding: 60px 0;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: baseline;
+// }
+// .footer__logo {
+//   color: var(--white-color);
+//   margin-bottom: 20px;
+// }
+// .footer__link {
+//   font-weight: 500;
+//   line-height: 1.717em;
+//   letter-spacing: 0.03em;
+//   color: rgba(255, 255, 255, 0.6);
+//   margin-top: 9px;
+// }
+// .footer__social-media {
+//   background-color: rgba(255, 255, 255, 0.1);
+//   margin-right: 10px;
+// }
+
+// .footer__icon-social-media {
+//   fill: rgba(255, 255, 255, 1);
+// }

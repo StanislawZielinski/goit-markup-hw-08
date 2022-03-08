@@ -223,11 +223,11 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="images\nasz zespół\frontend developer.jpg"
-                alt="frontend developer"
-              />
+                <picture >
+                <source srcset="images\nasz zespół\frontend desktop.jpg" media="(min-width: 1200px)">
+                <source srcset="images\nasz zespół\frontend developer tablet.jpg" media="(min-width: 768px)">
+                <img src="images\nasz zespół\frontend developer mobile.jpg" alt="frontend developer">
+              </picture>
               <h3 class="team__name">John Doe</h3>
               <p class="team__position">Fronted Developer</p>
               <ul class="social-media team__social-media">
@@ -262,11 +262,11 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="images\nasz zespół\marketing.jpg"
-                alt="marketing"
-              />
+                <picture >
+                <source srcset="images\nasz zespół\marketing desktop.jpg" media="(min-width: 1200px)">
+                <source srcset="images\nasz zespół\marketing tablet.jpg" media="(min-width: 768px)">
+                <img src="images\nasz zespół\marketing mobile.jpg" alt="marketing">
+                </picture>
               <h3 class="team__name">John Doe</h3>
               <p class="team__position">Marketing</p>
               <ul class="social-media team__social-media">
@@ -301,11 +301,11 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="images\nasz zespół\ul designer.webp"
-                alt="ul designer"
-              />
+                <picture >
+                <source srcset="images\nasz zespół\ul designer desktop.jpg" media="(min-width: 1200px)">
+                <source srcset="images\nasz zespół\ul designer tablet.jpg" media="(min-width: 768px)">
+                <img src="images\nasz zespół\ul designer mobile.jpg" alt="ul designer">
+                </picture>
               <h3 class="team__name">John Doe</h3>
               <p class="team__position">Ul Designer</p>
               <ul class="social-media team__social-media">
@@ -344,7 +344,7 @@
       </section>
 
       <!-- OUR CLIENTS -->
-      <!-- <section class="clients section">
+      <section class="clients section">
         <div class="container">
           <h2 class="clients__title">Nasi klienci</h2>
           <ul class="clients__list">
@@ -392,12 +392,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
-    -->
 
     <!-- footer -->
-    <!-- <footer class="footer">
+    <footer class="footer section">
       <div class="container">
         <div class="contact">
           <h3 class="logo footer__logo">
@@ -431,7 +430,7 @@
             </ul>
           </address>
         </div>
-        <div class="media">
+        <div class="media section">
           <p class="media__title">Dołącz do nas</p>
               <ul class="social-media">
                 <li class="social-media__item">                
@@ -466,7 +465,7 @@
         </div>
         <div class="newsletter">
           <form action="#">
-            <label >
+            <label>
               <p class="newsletter__text">ZAPISZ SIĘ DO NEWSLETTERA</p>
               <input type="email" name="newsletter-email" class ="newsletter__input" placeholder="E-mail" required>
             </label>
@@ -481,7 +480,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- MODAL WINDOW -->
     <div class="backdrop is-hidden" data-modal>

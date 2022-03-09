@@ -19,7 +19,6 @@
   </head>
   <body>
     <!-- header -->
-    <!-- header -->
     <header class="header">
       <div class="container">
         <!-- LOGO -->
@@ -307,8 +306,7 @@
       </div>
     </main>
     <!-- footer -->
-    <!-- footer -->
-    <footer class="footer">
+    <footer class="footer section">
       <div class="container">
         <div class="contact">
           <h3 class="logo footer__logo">
@@ -336,7 +334,7 @@
             </ul>
           </address>
         </div>
-        <div class="media">
+        <div class="media section">
           <p class="media__title">Dołącz do nas</p>
           <ul class="social-media">
             <li class="social-media__item">
@@ -393,5 +391,62 @@
         </div>
       </div>
     </footer>
+
+    <!-- HAMBURGER MENU -->
+    <div class="hamburger-backdrop is-hidden" data-hamburger>
+      <div class="container container-mobile-menu">
+        <!-- section hamburger-menu -->
+        <nav>
+          <ul class="menu-mobile">
+            <li class="menu-mobile__item">
+              <a class="menu-mobile__link menu-mobile__link--active" href="index.html">Agencja</a>
+            </li>
+            <li class="menu-mobile__item">
+              <a class="menu-mobile__link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="menu-mobile__item">
+              <a class="menu-mobile__link" href="#">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- section address -->
+        <address>
+          <ul class="address-mobile">
+            <li class="address-mobile__item">
+              <a class="address-mobile-number__link" href="tel:+48111111111"> +48 111 111 111</a>
+            </li>
+            <li class="address-mobile__item">
+              <a class="address-mobile-mail__link" href="mailto:info@devstudio.com">
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <section class="social-media-mobile">
+          <ul class="social-media-mobile__list">
+            <li class="social-media-mobile__item">
+              <a class="social-media-mobile__link" href="#">Instagram</a>
+            </li>
+            <li class="social-media-mobile__item">
+              <a class="social-media-mobile__link" href="#">Twitter</a>
+            </li>
+            <li class="social-media-mobile__item">
+              <a class="social-media-mobile__link" href="#">Facebook</a>
+            </li>
+            <li class="social-media-mobile__item">
+              <a class="social-media-mobile__link" href="#">Linkedin</a>
+            </li>
+          </ul>
+        </section>
+
+        <button type="button" class="close__btn" data-hamburger-close>
+          <svg class="icon-close-btn-mobile">
+            <use href="./images/svg/sprite.svg#icon-close_40px"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

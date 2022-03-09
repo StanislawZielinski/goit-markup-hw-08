@@ -3,8 +3,11 @@
 }
 
 //MOBILE********************
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .header__address {
+    display: none;
+  }
+  .header__navigation {
     display: none;
   }
   .header .container {
@@ -15,19 +18,35 @@
   }
 }
 // MOBILE END***********************
-// DESKTOP******************
-@media screen and (min-width: 1200px) {
+
+// TABLET*******************
+@media screen and (min-width: 768px) {
   .header .container {
     display: flex;
     align-items: center;
     min-height: 80px;
+    justify-content: space-between;
   }
-  .header__logo {
-    margin-right: 93px;
+  // .header__logo {
+  //   margin-right: 93px;
+  // }
+  .header__navigation {
+    min-width: 254px;
+  }
+  // .header__address {
+  //   width: 321px;
+  // }
+}
+// DESKTOP******************
+@media screen and (min-width: 769px) {
+  .header .container {
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+    justify-content: space-between;
   }
   .header__navigation {
-    width: 254px;
-    margin-right: 345px;
+    min-width: 254px;
   }
   .header__address {
     width: 321px;

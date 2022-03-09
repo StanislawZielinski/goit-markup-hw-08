@@ -1,4 +1,5 @@
-@media screen and (max-width: 480px) {
+// MOBILE AND TABLET*************
+@media screen and (max-width: 1199px) {
   .logo {
     font-family: var(--Raleway-font);
     font-weight: 700;
@@ -16,17 +17,19 @@
   }
 }
 // DESKTOP*****************
-// .logo {
-//   font-family: var(--Raleway-font);
-//   font-weight: 700;
-//   font-size: 26px;
-//   line-height: 1.192em;
-//   letter-spacing: 0.03em;
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-family: var(--Raleway-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192em;
+    letter-spacing: 0.03em;
 
-//   &__link {
-//     color: var(--secondary-color);
-//   }
-//   &__title {
-//     color: var(--main-color);
-//   }
-// }
+    &__link {
+      color: var(--secondary-color);
+    }
+    &__title {
+      color: var(--main-color);
+    }
+  }
+}

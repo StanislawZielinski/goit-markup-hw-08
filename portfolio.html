@@ -19,6 +19,7 @@
   </head>
   <body>
     <!-- header -->
+    <!-- header -->
     <header class="header">
       <div class="container">
         <!-- LOGO -->
@@ -30,12 +31,10 @@
         <nav>
           <ul class="navigation header__navigation">
             <li class="navigation__item">
-              <a class="navigation__link" href="index.html">Agencja</a>
+              <a class="navigation__link navigation__link--active" href="index.html">Agencja</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link navigation__link--active" href="portfolio.html"
-                >Portfolio</a
-              >
+              <a class="navigation__link" href="portfolio.html">Portfolio</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="#">Kontakt</a>
@@ -46,10 +45,7 @@
         <address>
           <ul class="address header__address">
             <li class="address__item">
-              <a
-                class="address__link"
-                href="mailto:info@devstudio.com"
-              >
+              <a class="address__link" href="mailto:info@devstudio.com">
                 <svg class="icon-envelope address__icon">
                   <use href="./images/svg/sprite.svg#icon-envelope"></use>
                 </svg>
@@ -66,7 +62,11 @@
             </li>
           </ul>
         </address>
-      </div>
+        <button class="hamburger" data-hamburger-open aria-label="Menu">
+          <svg class="icon-menu-mobile">
+            <use href="./images/svg/sprite.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- main -->

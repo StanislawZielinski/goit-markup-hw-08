@@ -16,20 +16,19 @@
 }
 
 // TABLET*******************
-@media screen and (max-width: 767px) {
-  .header__address {
-    display: none;
-  }
-  .header__navigation {
-    display: none;
-  }
-}
+
 @media screen and (min-width: 768px) {
   .header .container {
     min-height: 80px;
   }
+  .header__address {
+    display: flex;
+  }
   .header__navigation {
     min-width: 254px;
+  }
+  .header__navigation {
+    display: flex;
   }
 }
 

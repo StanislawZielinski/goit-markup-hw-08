@@ -75,7 +75,7 @@ a {
 
 @media screen and (max-width: 768px) {
   .container {
-    max-width: 480px;
+    min-width: 320px;
     padding: 0 15px;
     margin: 0 auto;
   }
@@ -164,7 +164,7 @@ a {
   color: var(--secondary-color);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .address-mobile__item {
     margin-bottom: 32px;
   }
@@ -219,6 +219,45 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .address {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .address__link {
+    color: #757575;
+    display: flex;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143em;
+    letter-spacing: 0.02em;
+  }
+  .address__link:hover, .address__link:focus {
+    color: var(--secondary-color);
+    fill: var(--secondary-color);
+  }
+  .address__localization {
+    line-height: 1.717em;
+    letter-spacing: 0.03em;
+    color: white;
+  }
+  .address__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
 .backdrop {
   background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
@@ -241,9 +280,16 @@ a {
   fill: var(--secondary-color);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .icon-envelope {
+    width: 14px;
+    height: 10px;
+  }
+}
+
 .icon-envelope {
   width: 16px;
-  height: 10px;
+  height: 12px;
 }
 
 .icon-smartphone {
@@ -335,7 +381,7 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  max-width: 450px;
   min-height: 581px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   background-color: var(--white-color);
@@ -440,6 +486,12 @@ a {
   border: none;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: var(--white-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+  }
 }
 
 .navigation {
@@ -602,6 +654,33 @@ a {
   border: 1px solid #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .clients__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .clients__link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 0px;
+  }
+  .clients__link {
+    width: 170px;
+  }
+  .clients__title {
+    font-size: 36px;
+    line-height: 1.667;
+    margin-bottom: 50px;
+  }
+}
+
 .description .container {
   display: flex;
   flex-direction: column;
@@ -644,6 +723,32 @@ a {
   line-height: 1.714em;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (min-width: 768px) {
+  .description .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .description__box {
+    margin-bottom: 0px;
+    width: 354px;
+  }
+  .description__box:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .description__box {
+    width: 270px;
+  }
+  .description .container {
+    flex-wrap: nowrap;
+    gap: 0px;
+    justify-content: space-between;
+  }
 }
 
 .footer {
@@ -697,19 +802,19 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-size: 480px 400px;
+  background-size: cover;
   align-items: center;
 }
 
 .general__text {
   font-weight: 900;
   font-size: 26px;
-  line-height: 1.615m;
+  line-height: 1.615;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  margin: 0 auto 30px;
+  margin-bottom: 30px;
   max-width: 365px;
 }
 
@@ -732,8 +837,40 @@ a {
   cursor: pointer;
 }
 
+@media screen and (min-width: 1200px) {
+  .general {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/general desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .general {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/general desktop@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .general .container {
+    height: 600px;
+  }
+  .general__text {
+    font-size: 44px;
+    max-width: 692px;
+  }
+}
+
 .header {
   border-bottom: 1px solid #ececec;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 767px) {
@@ -743,36 +880,18 @@ a {
   .header__navigation {
     display: none;
   }
-  .header .container {
-    display: flex;
-    align-items: center;
-    min-height: 60px;
-    justify-content: space-between;
-  }
 }
 
 @media screen and (min-width: 768px) {
   .header .container {
-    display: flex;
-    align-items: center;
     min-height: 80px;
-    justify-content: space-between;
   }
   .header__navigation {
     min-width: 254px;
   }
 }
 
-@media screen and (min-width: 769px) {
-  .header .container {
-    display: flex;
-    align-items: center;
-    min-height: 80px;
-    justify-content: space-between;
-  }
-  .header__navigation {
-    min-width: 254px;
-  }
+@media screen and (min-width: 1200px) {
   .header__address {
     width: 321px;
   }
@@ -894,6 +1013,34 @@ a {
   letter-spacing: 0.03em;
   color: #757575;
   margin: 10px auto 0;
+}
+
+@media screen and (min-width: 768px) {
+  .team__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  .team__item {
+    max-width: 354px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__list {
+    flex-wrap: nowrap;
+    gap: 0px;
+    justify-content: space-between;
+  }
+  .team__item {
+    width: 270px;
+  }
+  .team__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .what-we-do .container {

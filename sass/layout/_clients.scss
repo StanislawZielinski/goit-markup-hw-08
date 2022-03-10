@@ -36,35 +36,34 @@
     border: 1px solid rgba(33, 150, 243, 1);
   }
 }
+// TABLET****************
+@media screen and (min-width: 768px) {
+  .clients {
+    &__list {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    &__link {
+      width: 226px;
+    }
+  }
+}
 // DESKTOP****************
-// .clients {
-//   &__title {
-//     font-weight: 700;
-//     font-size: 36px;
-//     line-height: 1.667em;
-//     text-align: center;
-//     letter-spacing: 0.03em;
-//     margin-bottom: 50px;
-//   }
-//   &__list {
-//     display: flex;
-//     justify-content: space-between;
-//   }
-//   &__link {
-//     height: 92px;
-//     width: 170px;
-//     border-radius: 4px;
-//     border: 1px solid rgba(175, 177, 184, 1);
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     fill: rgba(175, 177, 184, 1);
-//     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   }
-
-//   &__link:hover,
-//   &__link:focus {
-//     fill: rgba(33, 150, 243, 1);
-//     border: 1px solid rgba(33, 150, 243, 1);
-//   }
-// }
+@media screen and (min-width: 1200px) {
+  .clients {
+    &__list {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      gap: 0px;
+    }
+    &__link {
+      width: 170px;
+    }
+    &__title {
+      font-size: 36px;
+      line-height: 1.667;
+      margin-bottom: 50px;
+    }
+  }
+}

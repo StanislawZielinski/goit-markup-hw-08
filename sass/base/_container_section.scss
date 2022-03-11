@@ -8,6 +8,10 @@
 }
 .container-mobile-menu {
   padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
 // MOBILE*************
 @media screen and (min-width: 480px) {

@@ -85,6 +85,10 @@ a {
 
 .container-mobile-menu {
   padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
 
 @media screen and (min-width: 480px) {
@@ -141,10 +145,6 @@ a {
 
 .menu-mobile__item {
   margin-bottom: 34px;
-}
-
-.menu-mobile__item:last-child {
-  margin-bottom: 302px;
 }
 
 .menu-mobile__link {

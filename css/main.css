@@ -114,6 +114,7 @@ a {
 
 .hamburger {
   border: 0;
+  background-color: none;
   cursor: pointer;
 }
 

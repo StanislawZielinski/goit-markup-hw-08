@@ -1,46 +1,52 @@
+// DESKTOP*************************
 .navigation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-  &__item {
-    position: relative;
-  }
-  &__link {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.143em;
-    letter-spacing: 0.02em;
-    color: var(--main-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &__link:hover,
-  &__link:focus {
-    color: var(--secondary-color);
-  }
-  &__link::after {
-    display: block;
-    content: '';
-    height: 3px;
-    width: 0%;
-    background-color: var(--secondary-color);
-    position: absolute;
-    bottom: -32px;
-    border-radius: 2px;
-    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &__link:hover::after {
-    width: 100%;
-  }
-  &__link--active::after {
-    display: block;
-    content: '';
-    height: 3px;
-    width: 100%;
-    background-color: var(--secondary-color);
-    position: absolute;
-    bottom: -32px;
-    border-radius: 2px;
+    &__item {
+      position: relative;
+    }
+    &__link {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.143em;
+      letter-spacing: 0.02em;
+      color: var(--main-color);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__link:hover,
+    &__link:focus {
+      color: var(--secondary-color);
+    }
+    &__link::after {
+      display: block;
+      content: '';
+      height: 3px;
+      width: 0%;
+      background-color: var(--secondary-color);
+      position: absolute;
+      bottom: -32px;
+      border-radius: 2px;
+      transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__link:hover::after {
+      width: 100%;
+    }
+    &__link--active::after {
+      display: block;
+      content: '';
+      height: 3px;
+      width: 100%;
+      background-color: var(--secondary-color);
+      position: absolute;
+      bottom: -32px;
+      border-radius: 2px;
+    }
   }
 }

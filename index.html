@@ -22,10 +22,8 @@
     <header class="header">
       <div class="container">
         <!-- LOGO -->
-        <h3 class="logo header__logo">
-          <a class="logo__link" href="index.html"
-            >Web<span class="logo__title">Studio</span></a
-          >
+        <h3 class="logo">
+          <a class="logo__link" href="index.html">Web<span class="logo__title">Studio</span></a>
         </h3>
 
         <!-- section nav -->
@@ -35,9 +33,7 @@
               <a class="navigation__link navigation__link--active" href="index.html">Agencja</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="portfolio.html"
-                >Portfolio</a
-              >
+              <a class="navigation__link" href="portfolio.html">Portfolio</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="#">Kontakt</a>
@@ -48,10 +44,7 @@
         <address>
           <ul class="address header__address">
             <li class="address__item">
-              <a
-                class="address__link"
-                href="mailto:info@devstudio.com"
-              >
+              <a class="address__link" href="mailto:info@devstudio.com">
                 <svg class="icon-envelope address__icon">
                   <use href="./images/svg/sprite.svg#icon-envelope"></use>
                 </svg>
@@ -68,6 +61,11 @@
             </li>
           </ul>
         </address>
+          <button class="hamburger" data-hamburger-open aria-label="Menu">
+            <svg class="icon-menu-mobile">
+            <use href="./images/svg/sprite.svg#icon-menu_24px"></use>
+            </svg>
+          </button>
       </div>
     </header>
 
@@ -76,9 +74,7 @@
     <main>
       <section class="general">
         <div class="container">
-          <h1 class="general__text">
-            EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
-          </h1>
+          <h1 class="general__text">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
           <button class="general__button" data-modal-open type="button">Zamów usługę</button>
         </div>
       </section>
@@ -94,8 +90,8 @@
             </div>
             <h4 class="description__title">LOREM IPSUM</h4>
             <p class="description__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+              sodales dui. Interdum et malesuada
             </p>
           </div>
 
@@ -107,8 +103,8 @@
             </div>
             <h4 class="description__title">LOREM IPSUM</h4>
             <p class="description__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+              sodales dui. Interdum et malesuada
             </p>
           </div>
 
@@ -120,8 +116,8 @@
             </div>
             <h4 class="description__title">LOREM IPSUM</h4>
             <p class="description__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+              sodales dui. Interdum et malesuada
             </p>
           </div>
 
@@ -133,15 +129,15 @@
             </div>
             <h4 class="description__title">LOREM IPSUM</h4>
             <p class="description__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+              sodales dui. Interdum et malesuada
             </p>
           </div>
         </div>
       </section>
 
       <!-- WHAT WE DO -->
-      <section class="what-we-do">
+      <section class="what-we-do section">
         <div class="container">
           <h2 class="what-we-do__title">Czym się zajmujemy</h2>
           <div class="what-we-do__box">
@@ -152,7 +148,8 @@
                 </div>
                 <img
                   class="what-we-do__img"
-                  src="images\czym się zajmujemy\obrazek 1.png"
+                  src="images\czym się zajmujemy\aplikacje komputerowe.jpg"
+                  srcset="images\czym się zajmujemy\aplikacje komputerowe@2x.jpg 2x"
                   alt="man typing on keybord"
                 />
               </li>
@@ -162,7 +159,8 @@
                 </div>
                 <img
                   class="what-we-do__img"
-                  src="images\czym się zajmujemy\obrazek 2.png"
+                  src="images\czym się zajmujemy\aplikacje mobilne.jpg"
+                  srcset="images\czym się zajmujemy\aplikacje mobilne@2x.jpg 2x"
                   alt="man working with phone nad laptop"
                 />
               </li>
@@ -172,7 +170,8 @@
                 </div>
                 <img
                   class="what-we-do__img"
-                  src="images\czym się zajmujemy\obrazek 3.png"
+                  src="images\czym się zajmujemy\rozwiazania graficzne.jpg"
+                  srcset="images\czym się zajmujemy\rozwiazania graficzne.jpg 1x, images\czym się zajmujemy\aplikacje mobile@2x.jpg 2x"
                   alt="man working on tabblet"
                 />
               </li>
@@ -180,18 +179,26 @@
           </div>
         </div>
       </section>
-
+<!-- <picture>
+                  <source media="(min-width: 1200px)"
+                  srcset="./images/index/face1desktop.jpg 1x, ./images/index/face1desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                  srcset="./images/index/face1tablet.jpg 1x, ./images/index/face1tablet@2x.jpg 2x">
+                  <source media="(min-width: 320px)"
+                      srcset="./images/index/face1mobile.jpg 1x, ./images/index/face1mobile@2x.jpg 2x">
+                  <img src="./images/index/face1.jpg" alt="Picture of John Doe - Product Designer"/>
+              </picture> -->
       <!-- TEAM -->
       <section class="team section">
         <div class="container">
           <h2 class="team__title">Nasz zespół</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                class="team__img"
-                src="images\nasz zespół\product designer.webp"
-                alt="product designer"
-              />
+              <picture >
+                <source srcset="images\nasz zespół\product designer desktop.jpg" media="(min-width: 1200px)">
+                <source srcset="images\nasz zespół\product designer tablet.jpg" media="(min-width: 768px)">
+                <img src="images\nasz zespół\product designer mobile.jpg" alt="product designer">
+              </picture>
               <h3 class="team__name">John Doe</h3>
               <p class="team__position">Product Designer</p>
               <ul class="social-media team__social-media">
@@ -226,11 +233,11 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="images\nasz zespół\frontend developer.jpg"
-                alt="frontend developer"
-              />
+                <picture >
+                <source srcset="images\nasz zespół\frontend desktop.jpg" media="(min-width: 1200px)">
+                <source srcset="images\nasz zespół\frontend developer tablet.jpg" media="(min-width: 768px)">
+                <img src="images\nasz zespół\frontend developer mobile.jpg" alt="frontend developer">
+              </picture>
               <h3 class="team__name">John Doe</h3>
               <p class="team__position">Fronted Developer</p>
               <ul class="social-media team__social-media">
@@ -265,11 +272,11 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="images\nasz zespół\marketing.jpg"
-                alt="marketing"
-              />
+                <picture >
+                <source srcset="images\nasz zespół\marketing desktop.jpg" media="(min-width: 1200px)">
+                <source srcset="images\nasz zespół\marketing tablet.jpg" media="(min-width: 768px)">
+                <img src="images\nasz zespół\marketing mobile.jpg" alt="marketing">
+                </picture>
               <h3 class="team__name">John Doe</h3>
               <p class="team__position">Marketing</p>
               <ul class="social-media team__social-media">
@@ -304,11 +311,11 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="images\nasz zespół\ul designer.webp"
-                alt="ul designer"
-              />
+                <picture >
+                <source srcset="images\nasz zespół\ul designer desktop.jpg" media="(min-width: 1200px)">
+                <source srcset="images\nasz zespół\ul designer tablet.jpg" media="(min-width: 768px)">
+                <img src="images\nasz zespół\ul designer mobile.jpg" alt="ul designer">
+                </picture>
               <h3 class="team__name">John Doe</h3>
               <p class="team__position">Ul Designer</p>
               <ul class="social-media team__social-media">
@@ -399,9 +406,9 @@
     </main>
 
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer section">
       <div class="container">
-        <div class="contact">
+        <div class="contact footer__contact">
           <h3 class="logo footer__logo">
             <a class="logo__link" href="index.html"
               >Web<span class="logo__title footer__logo">Studio</span></a
@@ -409,14 +416,14 @@
           </h3>
           <address class="address">
             <ul class="address__list">
-              <li class="address__item">
+              <li class="address__item footer__address-item">
                 <a
                   class="address__link address__localization"
                   href="https://goo.gl/maps/vwtQfrL8jL6CpNcj6"
                   >m. Warszawa, Aleje Jerozolimskie 21</a
                 >
               </li>
-              <li class="address__item">
+              <li class="address__item footer__address-item">
                 <a
                   class="address__link footer__link"
                   href="mailto:info@example.com"
@@ -434,7 +441,7 @@
           </address>
         </div>
         <div class="media">
-          <p class="media__title">Dołącz do nas</p>
+          <p class="media__title footer__media-title">Dołącz do nas</p>
               <ul class="social-media">
                 <li class="social-media__item">                
                   <a href="#" class="social-media__link footer__social-media">
@@ -468,7 +475,7 @@
         </div>
         <div class="newsletter">
           <form action="#">
-            <label >
+            <label>
               <p class="newsletter__text">ZAPISZ SIĘ DO NEWSLETTERA</p>
               <input type="email" name="newsletter-email" class ="newsletter__input" placeholder="E-mail" required>
             </label>
@@ -485,7 +492,7 @@
       </div>
     </footer>
 
-  <!-- MODAL WINDOW -->
+    <!-- MODAL WINDOW -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <h3 class="modal__title">Zostaw swoje dane w formularzu poniżej</h3>
@@ -493,43 +500,56 @@
           <label class="modal__label">
             <p class="modal__text">Imię</p>
             <div class="modal__box" role="group" aria-labelledby="name">
-              <input type="name" name="name" class="modal__input" required> 
+              <input type="name" name="name" class="modal__input" required />
               <svg class="icon-modal">
                 <use href="./images/svg/sprite.svg#icon-person-black-18dp"></use>
-              </svg>      
-            </div>         
+              </svg>
+            </div>
           </label>
 
-          <label class="modal__label"><p class="modal__text">Telefon</p>
+          <label class="modal__label"
+            ><p class="modal__text">Telefon</p>
             <div class="modal__box" role="group" aria-labelledby="tel">
-              <input type="tel" name="phone_nmber" class="modal__input" required>
+              <input type="tel" name="phone_nmber" class="modal__input" required />
               <svg class="icon-modal">
                 <use href="./images/svg/sprite.svg#icon-phone-black-18dp"></use>
               </svg>
-            </div>    
+            </div>
           </label>
 
-          <label class="modal__label"><p class="modal__text">Email</p>
+          <label class="modal__label"
+            ><p class="modal__text">Email</p>
             <div class="modal__box" role="group" aria-labelledby="email">
-                <input type="email" name="email" class="modal__input" required>
-                <svg class="icon-modal">
-                  <use href="./images/svg/sprite.svg#icon-email-black-18dp"></use>
-                </svg> 
-            </div>    
-          </label>
-          
-          <label class="modal__label"><p class="modal__text">Komentarz</p>
-            <textarea name="comments" placeholder="Wprowadź tekst" class="modal__comments"></textarea>
+              <input type="email" name="email" class="modal__input" required />
+              <svg class="icon-modal">
+                <use href="./images/svg/sprite.svg#icon-email-black-18dp"></use>
+              </svg>
+            </div>
           </label>
 
-          <input id="policy-form" type="checkbox" name="policy" class="policy__input visually-hiden" required>
-          <label for="policy-form" class="policy__label">Oświadczam iż akceptuję <a class="policy__link" href="#">Regulamin</a> i <a class="policy__link" href="#">Politykę Prywatności.</a>
+          <label class="modal__label"
+            ><p class="modal__text">Komentarz</p>
+            <textarea
+              name="comments"
+              placeholder="Wprowadź tekst"
+              class="modal__comments"
+            ></textarea>
+          </label>
+
+          <input
+            id="policy-form"
+            type="checkbox"
+            name="policy"
+            class="policy__input visually-hiden"
+            required
+          />
+          <label for="policy-form" class="policy__label"
+            >Oświadczam iż akceptuję <a class="policy__link" href="#">Regulamin</a> i
+            <a class="policy__link" href="#">Politykę Prywatności.</a>
           </label>
 
           <div class="modal__button-box">
-            <button type="submit" class="modal__button">
-                Wyślij
-            </button>
+            <button type="submit" class="modal__button">Wyślij</button>
           </div>
         </form>
 
@@ -540,6 +560,63 @@
         </button>
       </div>
     </div>
+    <!-- HAMBURGER MENU -->
+    <div class="hamburger-backdrop is-hidden" data-hamburger>
+      <div class="container container-mobile-menu">
+        <!-- section hamburger-menu -->
+        <nav>
+          <ul class="menu-mobile">
+            <li class="menu-mobile__item">
+              <a class="menu-mobile__link menu-mobile__link--active" href="index.html">Agencja</a>
+            </li>
+            <li class="menu-mobile__item">
+              <a class="menu-mobile__link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="menu-mobile__item">
+              <a class="menu-mobile__link" href="#">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- section address -->
+        <address>
+          <ul class="address-mobile">
+            <li class="address-mobile__item">
+              <a class="address-mobile-number__link" href="tel:+48111111111"> +48 111 111 111</a>
+            </li>
+            <li class="address-mobile__item">
+              <a class="address-mobile-mail__link" href="mailto:info@devstudio.com">
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <section class="social-media-mobile">
+          <ul class="social-media-mobile__list">
+            <li class="social-media-mobile__item">
+              <a class="social-media-mobile__link" href="#">Instagram</a>
+            </li>
+            <li class="social-media-mobile__item">
+              <a class="social-media-mobile__link" href="#">Twitter</a>
+            </li>
+            <li class="social-media-mobile__item">
+              <a class="social-media-mobile__link" href="#">Facebook</a>
+            </li>
+            <li class="social-media-mobile__item">
+              <a class="social-media-mobile__link" href="#">Linkedin</a>
+            </li>
+          </ul>
+        </section>
+
+        <button type="button" class="close__btn" data-hamburger-close>
+          <svg class="icon-close-btn-mobile">
+            <use href="./images/svg/sprite.svg#icon-close_40px"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

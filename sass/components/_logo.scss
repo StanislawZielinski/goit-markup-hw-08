@@ -1,15 +1,24 @@
+// MOBILE AND TABLET*************
 .logo {
   font-family: var(--Raleway-font);
   font-weight: 700;
-  font-style: normal;
-  font-size: 26px;
-  line-height: 1.192em;
+  font-size: 24px;
+  line-height: 1.174em;
   letter-spacing: 0.03em;
+  text-align: center;
 
   &__link {
     color: var(--secondary-color);
   }
   &__title {
     color: var(--main-color);
+  }
+}
+
+// DESKTOP*****************
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.192em;
   }
 }

@@ -1,20 +1,26 @@
+// MOBILE************
 .description .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.description__box :not(last-child) {
-  margin-right: 30px;
+.description__box {
+  margin-bottom: 30px;
+  width: 100%;
+  &:last-child {
+    margin-bottom: 0px;
+  }
 }
 .description__icon {
   height: 120px;
-  width: 270px;
+  width: 100%;
   border-radius: 4px;
   background: rgba(245, 244, 250, 1);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .description__title {
   font-weight: 700;
@@ -23,6 +29,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .description__text {
@@ -30,5 +37,30 @@
   line-height: 1.714em;
   letter-spacing: 0.03em;
   color: #757575;
-  width: 270px;
+}
+// TABLET****************
+@media screen and (min-width: 768px) {
+  .description .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .description__box {
+    margin-bottom: 0px;
+    width: 354px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+// DESKTOP***************
+@media screen and (min-width: 1200px) {
+  .description__box {
+    width: 270px;
+  }
+  .description .container {
+    flex-wrap: nowrap;
+    gap: 0px;
+    justify-content: space-between;
+  }
 }

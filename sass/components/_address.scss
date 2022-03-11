@@ -1,11 +1,35 @@
-.address {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+// MOBILE****************
 
+.address-mobile {
+  &__item {
+    margin-bottom: 32px;
+    &:last-child {
+      margin-bottom: 64px;
+    }
+  }
+
+  &-number__link {
+    font-size: 34px;
+    font-style: normal;
+    color: var(--secondary-color);
+    font-weight: 500;
+    line-height: 1.174;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+  &-mail__link {
+    color: rgba(117, 117, 117, 1);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.167;
+    letter-spacing: 0.02em;
+  }
+}
+.address {
+  text-align: center;
   &__link {
     color: rgba(117, 117, 117, 1);
-    display: flex;
     align-items: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-style: normal;
@@ -29,4 +53,45 @@
 .address__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+// TABLET***********************
+@media screen and (min-width: 768px) {
+  .address {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    &__link {
+      color: rgba(117, 117, 117, 1);
+      display: flex;
+      align-items: center;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.143em;
+      letter-spacing: 0.02em;
+    }
+    &__link:hover,
+    &__link:focus {
+      color: var(--secondary-color);
+      fill: var(--secondary-color);
+    }
+    &__localization {
+      line-height: 1.717em;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+
+  .address__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
+// DESKTOP**********************
+@media screen and (min-width: 1200px) {
+  .address {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }

@@ -1,19 +1,40 @@
 .header {
   border-bottom: 1px solid #ececec;
 }
-
 .header .container {
   display: flex;
   align-items: center;
-  min-height: 80px;
+  min-height: 60px;
+  justify-content: space-between;
 }
-.header__logo {
-  margin-right: 93px;
+//MOBILE********************
+.header__address {
+  display: none;
 }
 .header__navigation {
-  width: 254px;
-  margin-right: 345px;
+  display: none;
 }
-.header__address {
-  width: 321px;
+
+// TABLET*******************
+
+@media screen and (min-width: 768px) {
+  .header .container {
+    min-height: 80px;
+  }
+  .header__address {
+    display: flex;
+  }
+  .header__navigation {
+    min-width: 254px;
+  }
+  .header__navigation {
+    display: flex;
+  }
+}
+
+// DESKTOP******************
+@media screen and (min-width: 1200px) {
+  .header__address {
+    width: 321px;
+  }
 }

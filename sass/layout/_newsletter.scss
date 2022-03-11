@@ -1,3 +1,4 @@
+// MOBILE***********
 .newsletter__text {
   font-size: 14px;
   font-weight: 700;
@@ -5,9 +6,10 @@
   letter-spacing: 0.03em;
   color: var(--white-color);
   margin-bottom: 20px;
+  text-align: center;
 }
 .newsletter__input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   background-color: var(--blackBackground-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -15,11 +17,23 @@
   outline: none;
   padding-left: 16px;
   color: var(--white-color);
+  margin-bottom: 20px;
 }
 .newsletter__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-
+.newsletter__button {
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
 .newsletter__box-button {
   display: flex;
   justify-content: space-evenly;
@@ -30,13 +44,18 @@
   letter-spacing: 0.06em;
   color: var(--white-color);
 }
-.newsletter__button {
-  cursor: pointer;
-  background-color: var(--secondary-color);
-  width: 200px;
-  height: 50px;
-  border-radius: 4px;
-  border: none;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  margin-left: 12px;
+
+// DESKTOP*************
+@media screen and (min-width: 1200px) {
+  .newsletter__input {
+    width: 358px;
+  }
+  .newsletter__text {
+    text-align: left;
+  }
+  .newsletter__button {
+    position: relative;
+    left: 0;
+    transform: translate(0);
+  }
 }

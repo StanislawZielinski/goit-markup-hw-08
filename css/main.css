@@ -568,6 +568,7 @@ a {
 
 .social-media-mobile__list {
   display: flex;
+  justify-content: space-between;
 }
 
 .social-media-mobile__link {
@@ -578,7 +579,6 @@ a {
   line-height: 1.222;
   letter-spacing: 0.02em;
   text-align: left;
-  margin-right: 20px;
 }
 
 .social-media {

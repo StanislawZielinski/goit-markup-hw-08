@@ -1,6 +1,7 @@
 .social-media-mobile {
   &__list {
     display: flex;
+    justify-content: space-between;
   }
   &__link {
     color: var(--secondary-color);
@@ -10,7 +11,6 @@
     line-height: 1.222;
     letter-spacing: 0.02em;
     text-align: left;
-    margin-right: 20px;
   }
 }
 
